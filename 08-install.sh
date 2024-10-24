@@ -3,6 +3,7 @@
 #our goal is to install mysql or any applications
 
 USERID=$(id -u)
+G="\2[32m"
 
 if [ $USERID -ne 0 ]
 then 
@@ -20,7 +21,7 @@ then
     echo "Installation of mysql is error"
     exit 1
 else
-    echo "Installation of mysql is success"
+    echo  "Installation of mysql is $Gsuccess"
 fi
 
 
