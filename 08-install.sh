@@ -16,14 +16,13 @@ then
 fi
 
 yum install mysql -y
-exit 1
 
-if [ $? -ne 0 ]
+if [ $1? -ne 0 ]
 then
     echo "Installation of mysql is error"
     exit 1
 else
-    echo -e " $? Installation of mysql is $Gsuccess"
+    echo -e " $2? Installation of mysql is $G success"
 fi
 
 
