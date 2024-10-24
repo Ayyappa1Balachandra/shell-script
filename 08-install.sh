@@ -3,7 +3,7 @@
 #our goal is to install mysql or any applications
 
 USERID=$(id -u)
-G="\2[32m"
+G="\e[32m"
 
 if [ $USERID -ne 0 ]
 then 
