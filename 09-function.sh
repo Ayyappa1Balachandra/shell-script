@@ -9,15 +9,6 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ $USERID -ne 0 ]
-then 
-    echo -e "$R ERROR $N:: Please run this script with root access"
-    exit 1
-#else
-     #echo "INFO:: You are root user"
-     #remember this if ur not using else part then else also comment ok.....
-fi
-
 #this function concept syntax is VALIDATE(){
 #WRITE YOUR LOGIC HERE.
 #}
@@ -32,6 +23,16 @@ VALIDATE(){
         echo -e "$2 Installation .....$G SUCCESS $N"
     fi
 }
+
+if [ $USERID -ne 0 ]
+then 
+    echo -e "$R ERROR $N:: Please run this script with root access"
+    exit 1
+#else
+     #echo "INFO:: You are root user"
+     #remember this if ur not using else part then else also comment ok.....
+fi
+
 
 
 yum install mysql -y
