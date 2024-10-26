@@ -2,6 +2,9 @@
 
 #this function should validate the previous command and inform user it is success or failure.
 
+DATE=$(date +%F-%H-%M-%S)
+LOGFILE=/tmp/
+
 USERID=$(id -u)
 
 R="\e[31m"
