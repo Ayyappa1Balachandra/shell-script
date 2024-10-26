@@ -30,9 +30,10 @@ VALIDATE(){
     if [ $LIST_OF_APPS -ne 0 ]
     then
         echo "Installation .....$R FAILURE $N"
-        exit 1
+        exit1
     else
         echo "Installation .....$G SUCCESS $N"
+        exit1
     fi
 }
 
