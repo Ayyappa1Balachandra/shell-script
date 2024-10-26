@@ -30,10 +30,8 @@ VALIDATE(){
     if [ $LIST_OF_APPS -ne 0 ]
     then
         echo -e "Installation .....$R FAILURE $N"
-        exit 1
     else
         echo -e "Installation .....$G SUCCESS $N"
-        exit 1
     fi
 }
 
@@ -47,6 +45,5 @@ VALIDATE(){
 #VALIDATE $? "$Y postfix Installing"
 
 yum install $LIST_OF_APPS -y
-exit 1
 
 VALIDATE $? " Installing $LIST_OF_APPS"
