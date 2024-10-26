@@ -9,5 +9,6 @@ for i in $@
 
 do
     yum install $i
+    exit 1
 
 done
