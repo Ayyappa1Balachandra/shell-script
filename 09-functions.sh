@@ -9,6 +9,8 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+LIST_OF_APPS="mysql postfix git mail eclipse"
+
 if [ $USERID -ne 0 ]
 then 
     echo -e "$R ERROR $N:: Please run this script with root access"
@@ -25,7 +27,7 @@ fi
 VALIDATE(){
     #$1--> it will rceive the arugment1
 
-    if [ $1 -ne 0 ]
+    if [ $LIST_OF_APPS -ne 0 ]
     then
         echo "Installation .....$R FAILURE $N"
         exit 1
@@ -43,6 +45,6 @@ VALIDATE(){
 
 #VALIDATE $? "$Y postfix Installing"
 
-yum install $@ -y
+yum install $LIST_OF_APPS -y
 
-VALIDATE $? " Installing $@"
+VALIDATE $? " Installing $LIST_OF_APPS"
