@@ -28,10 +28,10 @@ VALIDATE(){
     if [ $LIST_OF_APPS -ne 0 ]
     then
         echo -e "Remove..... $R FAILURE $N"
-        exit 1
+        
     else
         echo -e "Remove .....$G SUCCESS $N"
-        exit 1
+        
     fi
 }
 
@@ -45,6 +45,6 @@ VALIDATE(){
 #VALIDATE $? "$Y postfix Installing"
 
 yum remove $LIST_OF_APPS -y
-exit 1
+
 
 VALIDATE $? " Removing $LIST_OF_APPS"
