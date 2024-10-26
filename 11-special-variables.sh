@@ -7,7 +7,7 @@ echo "variable 1: $VAR1"
 
 echo "all vars:$@"
 
-#echo "no. of vars:$#"
+echo "no. of vars:$#"
 
 # #indicates how many variables.
 
