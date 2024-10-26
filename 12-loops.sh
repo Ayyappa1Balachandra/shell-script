@@ -8,6 +8,6 @@
 for i in $@
 
 do
-    YUM INSTALL $i
+    yum install $i
 
 done
