@@ -47,5 +47,6 @@ VALIDATE(){
 #VALIDATE $? "$Y postfix Installing"
 
 yum install $LIST_OF_APPS -y
+exit1
 
 VALIDATE $? " Installing $LIST_OF_APPS"

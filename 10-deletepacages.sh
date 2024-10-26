@@ -45,5 +45,6 @@ VALIDATE(){
 #VALIDATE $? "$Y postfix Installing"
 
 yum remove $LIST_OF_APPS -y
+exit1
 
 VALIDATE $? " Removing $LIST_OF_APPS"
