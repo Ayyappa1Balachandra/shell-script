@@ -27,10 +27,10 @@ VALIDATE(){
 
     if [ $LIST_OF_APPS -ne 0 ]
     then
-        echo "Installation .....$R FAILURE $N"
+        echo "Remove..... $R FAILURE $N"
         exit 1
     else
-        echo "Installation .....$G SUCCESS $N"
+        echo "Remove .....$G SUCCESS $N"
     fi
 }
 
@@ -45,4 +45,4 @@ VALIDATE(){
 
 yum remove $LIST_OF_APPS -y
 
-VALIDATE $? " Installing $LIST_OF_APPS"
+VALIDATE $? " Removing $LIST_OF_APPS"
