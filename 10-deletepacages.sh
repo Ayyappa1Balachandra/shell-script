@@ -7,7 +7,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-LIST_OF_APPS="mysql postfix git eclipse"
+LIST_OF_APPS=""
 
 if [ $USERID -ne 0 ]
 then 
