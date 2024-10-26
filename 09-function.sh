@@ -22,6 +22,7 @@ VALIDATE(){
         exit 1
     else
         echo -e "$2 Installation .....$G SUCCESS $N"
+        exit 1
     fi
 }
 
