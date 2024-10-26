@@ -22,7 +22,8 @@ then
     echo "Installation of mysql is error"
     exit 1
 else
-    echo -e " Installation of mysql is $G success"
+    echo -e " Installation of mysql is $G success $N"
+    #Here after $G must give space between the $G and success to refect the color
 fi
 
 
